@@ -1,2 +1,2 @@
 # HAUSTECHNIKDE
-GitHub Pages version with all image files in repository root.
+Final photo-fixed GitHub Pages build.
