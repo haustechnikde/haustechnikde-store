@@ -19,3 +19,38 @@
 .heroimg{padding:42px 54px;background:#0a2033;display:flex;align-items:center;justify-content:center;overflow:hidden}
 .heroimg img{width:88%;height:88%;max-width:88%;max-height:88%;object-fit:contain;object-position:center center;transform:none;border-radius:3px}
 @media(max-width:900px){.heroimg{padding:24px}.heroimg img{width:92%;height:92%;max-width:92%;max-height:92%}}
+
+/* V3 — ONLY the five service cards are smaller and cleaner */
+.services{
+  padding:18px 7%;
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  gap:12px;
+  justify-content:center;
+}
+.services article{
+  height:205px;
+  border-radius:8px;
+}
+.services img{
+  height:118px;
+  object-fit:cover;
+  object-position:center center;
+}
+.services article:after{
+  top:70px;
+  background:linear-gradient(transparent,#071521 82%);
+}
+.services article div{
+  left:14px;
+  right:12px;
+  bottom:10px;
+}
+.services b{font-size:14px}
+.services p{font-size:10px;margin:7px 0}
+.services a{font-size:9px}
+@media(max-width:900px){
+  .services{grid-template-columns:repeat(2,1fr);padding:18px 5%}
+  .services article{height:215px}
+  .services img{height:128px}
+}
+@media(max-width:550px){.services{grid-template-columns:1fr}}
