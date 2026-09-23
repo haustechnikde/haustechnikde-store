@@ -5,52 +5,18 @@
 .services article:after{top:80px;background:linear-gradient(transparent,#071521 75%)}
 .services article div{bottom:14px}
 @media(max-width:900px){.services img{height:165px}}
-/* Final hero image adjustment: slightly less zoomed for a cleaner crop */
-.heroimg{background:#0a2033;display:flex;align-items:center;justify-content:center}
-.heroimg img{width:100%;height:100%;object-fit:cover;object-position:center 42%;transform:scale(.94);transform-origin:center center}
-/* CLEAN FINAL IMAGE PASS */
-.heroimg{padding:18px;background:#0a2033;overflow:hidden}
-.heroimg img{width:100%;height:100%;object-fit:contain;object-position:center center;transform:none;border-radius:2px}
-.services article{height:245px}
-.services img{width:100%;height:142px;object-fit:cover;object-position:center center;opacity:1}
-.services article:after{top:92px;background:linear-gradient(transparent,#071521 82%)}
-.services article div{bottom:12px}
-/* HERO V2 — visibly smaller technician image, rest of design unchanged */
-.heroimg{padding:42px 54px;background:#0a2033;display:flex;align-items:center;justify-content:center;overflow:hidden}
-.heroimg img{width:88%;height:88%;max-width:88%;max-height:88%;object-fit:contain;object-position:center center;transform:none;border-radius:3px}
-@media(max-width:900px){.heroimg{padding:24px}.heroimg img{width:92%;height:92%;max-width:92%;max-height:92%}}
-
-/* V3 — ONLY the five service cards are smaller and cleaner */
-.services{
-  padding:18px 7%;
-  grid-template-columns:repeat(5,minmax(0,1fr));
-  gap:12px;
-  justify-content:center;
-}
-.services article{
-  height:205px;
-  border-radius:8px;
-}
-.services img{
-  height:118px;
-  object-fit:cover;
-  object-position:center center;
-}
-.services article:after{
-  top:70px;
-  background:linear-gradient(transparent,#071521 82%);
-}
-.services article div{
-  left:14px;
-  right:12px;
-  bottom:10px;
-}
-.services b{font-size:14px}
-.services p{font-size:10px;margin:7px 0}
-.services a{font-size:9px}
-@media(max-width:900px){
-  .services{grid-template-columns:repeat(2,1fr);padding:18px 5%}
-  .services article{height:215px}
-  .services img{height:128px}
-}
-@media(max-width:550px){.services{grid-template-columns:1fr}}
+/* Final visual tuning to match approved preview */
+header{height:68px;padding:0 7%;}
+.hero{min-height:475px;grid-template-columns:1.03fr .97fr;align-items:stretch}
+.copy{padding:70px 7% 48px 12%}
+.copy h1{font-size:50px;line-height:1.03;margin:18px 0}
+.heroimg{padding:38px 6% 28px 2%;display:flex;align-items:center}
+.heroimg img{height:390px;width:100%;border-radius:0;object-fit:cover;object-position:center center}
+.services{padding:18px 6% 22px;gap:16px}
+.services article{height:258px}
+.services img{height:150px;object-fit:cover;object-position:center center}
+.services article:nth-child(5) img{transform:scale(1.18);transform-origin:center 42%;object-position:62% 42%}
+.services article:after{top:82px;background:linear-gradient(transparent 5%,#071521 78%)}
+.services article div{left:18px;bottom:16px}
+.services b{font-size:16px}.services p{font-size:11px;margin:9px 0 13px}
+@media(max-width:900px){.heroimg{padding:0;height:400px}.heroimg img{height:100%}.services article:nth-child(5) img{transform:scale(1.14)}}
