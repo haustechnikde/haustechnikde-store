@@ -1,1 +1,2 @@
-# HAUSTECHNIKDE\nPremium GitHub Pages website with local photo assets.\n
+# HAUSTECHNIKDE
+GitHub Pages version with all image files in repository root.
