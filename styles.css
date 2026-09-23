@@ -8,3 +8,10 @@
 /* Final hero image adjustment: slightly less zoomed for a cleaner crop */
 .heroimg{background:#0a2033;display:flex;align-items:center;justify-content:center}
 .heroimg img{width:100%;height:100%;object-fit:cover;object-position:center 42%;transform:scale(.94);transform-origin:center center}
+/* CLEAN FINAL IMAGE PASS */
+.heroimg{padding:18px;background:#0a2033;overflow:hidden}
+.heroimg img{width:100%;height:100%;object-fit:contain;object-position:center center;transform:none;border-radius:2px}
+.services article{height:245px}
+.services img{width:100%;height:142px;object-fit:cover;object-position:center center;opacity:1}
+.services article:after{top:92px;background:linear-gradient(transparent,#071521 82%)}
+.services article div{bottom:12px}
