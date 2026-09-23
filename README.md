@@ -1,2 +1,2 @@
 # HAUSTECHNIKDE
-Clean-image GitHub Pages build.
+Final photo-fixed GitHub Pages build.
