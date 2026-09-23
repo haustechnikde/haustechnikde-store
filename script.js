@@ -1,0 +1,2 @@
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener("click",e=>{const id=a.getAttribute("href");if(id!=="#"){e.preventDefault();document.querySelector(id)?.scrollIntoView({behavior:"smooth"})}}));
+document.getElementById("form").addEventListener("submit",e=>{e.preventDefault();document.getElementById("msg").textContent="✓ Anfrage vorbereitet. Fügen Sie Ihre geschäftliche E-Mail-Adresse hinzu, sobald sie verfügbar ist.";});
